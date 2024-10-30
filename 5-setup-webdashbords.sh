@@ -41,7 +41,7 @@ setup_react_app() {
     log "Setting up React application structure..."
 
     # Create directory structure
-    mkdir -p web-ui/{src/{components,contexts,hooks,services,pages,utils},public}
+    mkdir -p web-ui/{src/{components,contexts,hooks,services,pages,utils,stores},public}
 
     # Create package.json with required dependencies
     cat > web-ui/package.json << 'EOL'
