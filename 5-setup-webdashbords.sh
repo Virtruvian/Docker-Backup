@@ -41,7 +41,7 @@ setup_react_app() {
     log "Setting up React application structure..."
 
     # Create directory structure
-    mkdir -p web-ui/{src/{components,contexts,hooks,services,pages,utils,stores},public}
+    mkdir -p web-ui/{src/{components,contexts,hooks,services,pages,utils},public}
 
     # Create package.json with required dependencies
     cat > web-ui/package.json << 'EOL'
@@ -472,7 +472,8 @@ const Navigation = () => {
                 to="/restore"
                 className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900"
               >
-                <RefreshCw className="h-4 w-4 mr-2
+                <RefreshCw className="h-4 w-4 mr-2" />
+                Restore
               </Link>
             </div>
           </div>
